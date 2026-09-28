@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>KAFEMM | Cafe & Restaurant</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Playfair+Display:wght@500;600;700&display=swap');
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:#10100f;color:#f4eee3;font-family:'DM Sans',sans-serif}
+.hero{min-height:58vh;display:flex;align-items:center;justify-content:center;text-align:center;padding:60px 20px;background:
+linear-gradient(#10100fcc,#10100fe8),radial-gradient(circle at 50% 20%,#60451d55,transparent 45%)}
+.hero-inner{max-width:900px}
+.logo{font-family:'Playfair Display',serif;font-size:clamp(54px,11vw,110px);letter-spacing:.14em;margin:0;color:#d7ad68}
+.line{width:100px;height:1px;background:#d7ad68;margin:20px auto}
+.subtitle{letter-spacing:.38em;font-size:13px;color:#ddd0bc;text-transform:uppercase}
+.tag{font-family:'Playfair Display',serif;font-style:italic;font-size:22px;color:#d7ad68;margin-top:30px}
+.nav{position:sticky;top:0;z-index:5;background:#10100ff2;backdrop-filter:blur(12px);border-bottom:1px solid #3b3022;overflow:auto;white-space:nowrap;text-align:center}
+.nav a{display:inline-block;color:#d9d0c2;text-decoration:none;padding:17px 14px;font-size:13px}
+.nav a:hover{color:#d7ad68}
+main{max-width:1050px;margin:auto;padding:50px 20px 80px}
+section{margin-bottom:58px}
+h2{font-family:'Playfair Display',serif;font-size:32px;color:#d7ad68;font-weight:600;text-align:center;margin:0 0 28px}
+h2:after{content:"";display:block;width:55px;height:1px;background:#d7ad68;margin:13px auto}
+.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+.item{padding:19px 20px;border:1px solid #342b20;background:#171614;border-radius:10px;display:flex;justify-content:space-between;gap:20px}
+.item h3{font-size:16px;margin:0 0 6px;font-weight:500}
+.desc{font-size:12px;color:#a9a095;line-height:1.45}
+.price{color:#d7ad68;font-weight:600;white-space:nowrap}
+.special{border-color:#8e6a36;background:linear-gradient(135deg,#1b1813,#171614)}
+footer{text-align:center;border-top:1px solid #342b20;padding:35px 20px;color:#8f877c;font-size:12px}
+footer strong{color:#d7ad68;font-family:'Playfair Display',serif;font-size:20px;letter-spacing:.15em}
+@media(max-width:650px){.grid{grid-template-columns:1fr}.item{padding:17px}.subtitle{letter-spacing:.22em;font-size:11px}main{padding-top:38px}}
+</style>
+</head>
+<body>
+<header class="hero">
+  <div class="hero-inner">
+    <div class="logo">KAFEMM</div>
+    <div class="line"></div>
+    <div class="subtitle">CAFE & RESTAURANT</div>
+    <div class="tag">İyi Yemek • İyi Kahve • İyi Vakit</div>
+  </div>
+</header>
+
+<nav class="nav">
+<a href="#baslangiclar">Başlangıçlar</a><a href="#salatalar">Salatalar</a><a href="#ana">Ana Yemekler</a>
+<a href="#makarna">Makarnalar</a><a href="#pizza">Pizzalar</a><a href="#tatli">Tatlılar</a><a href="#icecek">İçecekler</a>
+</nav>
+
+<main>
+<section id="baslangiclar"><h2>Başlangıçlar</h2><div class="grid">
+<div class="item"><div><h3>Ezme</h3><div class="desc">Geleneksel acılı meze</div></div><span class="price">180 ₺</span></div>
+<div class="item"><div><h3>Haydari</h3><div class="desc">Yoğurt, sarımsak ve taze otlar</div></div><span class="price">170 ₺</span></div>
+<div class="item"><div><h3>Humus</h3><div class="desc">Nohut, tahin, zeytinyağı</div></div><span class="price">160 ₺</span></div>
+<div class="item"><div><h3>Sigara Böreği</h3><div class="desc">5 adet çıtır börek</div></div><span class="price">160 ₺</span></div>
+</div></section>
+
+<section id="salatalar"><h2>Salatalar</h2><div class="grid">
+<div class="item"><div><h3>Çoban Salata</h3><div class="desc">Domates, salatalık, soğan, yeşillik</div></div><span class="price">190 ₺</span></div>
+<div class="item"><div><h3>Sezar Salata</h3><div class="desc">Marul, parmesan, kruton, Sezar sos</div></div><span class="price">220 ₺</span></div>
+<div class="item"><div><h3>Tavuklu Salata</h3><div class="desc">Izgara tavuk ve mevsim yeşillikleri</div></div><span class="price">240 ₺</span></div>
+<div class="item"><div><h3>Akdeniz Salata</h3><div class="desc">Beyaz peynir, zeytin, domates</div></div><span class="price">200 ₺</span></div>
+</div></section>
+
+<section id="ana"><h2>Ana Yemekler</h2><div class="grid">
+<div class="item"><div><h3>Izgara Tavuk</h3><div class="desc">Izgara tavuk, sebze garnitür, patates</div></div><span class="price">280 ₺</span></div>
+<div class="item"><div><h3>Köfte Tabağı</h3><div class="desc">Dana köfte, pilav, patates, salata</div></div><span class="price">310 ₺</span></div>
+<div class="item"><div><h3>Karışık Izgara</h3><div class="desc">Tavuk, köfte, sucuk, sebze, patates</div></div><span class="price">480 ₺</span></div>
+<div class="item"><div><h3>Antrikot</h3><div class="desc">Dana antrikot, sebze garnitür, patates</div></div><span class="price">520 ₺</span></div>
+<div class="item"><div><h3>Dana Lokum</h3><div class="desc">Yumuşak dana bonfile, özel sos</div></div><span class="price">560 ₺</span></div>
+<div class="item"><div><h3>Somon Izgara</h3><div class="desc">Izgara somon, mevsim sebzeleri, limon</div></div><span class="price">520 ₺</span></div>
+</div></section>
+
+<section id="makarna"><h2>Makarnalar</h2><div class="grid">
+<div class="item"><div><h3>Spaghetti Bolonez</h3><div class="desc">Dana kıyma ve domates sos</div></div><span class="price">280 ₺</span></div>
+<div class="item"><div><h3>Fettuccine Alfredo</h3><div class="desc">Krema ve parmesan</div></div><span class="price">290 ₺</span></div>
+<div class="item"><div><h3>Penne Arrabbiata</h3><div class="desc">Acı domates sos, sarımsak</div></div><span class="price">270 ₺</span></div>
+<div class="item"><div><h3>Tavuklu Fettuccine</h3><div class="desc">Tavuk, krema ve mantar</div></div><span class="price">310 ₺</span></div>
+</div></section>
+
+<section id="pizza"><h2>Pizzalar</h2><div class="grid">
+<div class="item"><div><h3>Margherita</h3><div class="desc">Domates sos, mozzarella, fesleğen</div></div><span class="price">260 ₺</span></div>
+<div class="item"><div><h3>Sucuklu Pizza</h3><div class="desc">Domates sos, mozzarella, sucuk</div></div><span class="price">290 ₺</span></div>
+<div class="item"><div><h3>Karışık Pizza</h3><div class="desc">Sucuk, salam, mantar, biber, zeytin</div></div><span class="price">320 ₺</span></div>
+<div class="item"><div><h3>Ton Balıklı Pizza</h3><div class="desc">Ton balığı, mozzarella, domates sos</div></div><span class="price">310 ₺</span></div>
+</div></section>
+
+<section id="tatli"><h2>Tatlılar</h2><div class="grid">
+<div class="item"><div><h3>Tiramisu</h3><div class="desc">Klasik İtalyan tatlısı</div></div><span class="price">180 ₺</span></div>
+<div class="item"><div><h3>San Sebastian</h3><div class="desc">Kremamsı cheesecake</div></div><span class="price">170 ₺</span></div>
+<div class="item"><div><h3>Çikolatalı Sufle</h3><div class="desc">Sıcak çikolatalı sufle</div></div><span class="price">160 ₺</span></div>
+<div class="item"><div><h3>Künefe</h3><div class="desc">Sıcak, peynirli geleneksel tatlı</div></div><span class="price">170 ₺</span></div>
+</div></section>
+
+<section id="icecek"><h2>İçecekler</h2><div class="grid">
+<div class="item"><div><h3>Çay</h3></div><span class="price">25 ₺</span></div>
+<div class="item"><div><h3>Türk Kahvesi</h3></div><span class="price">60 ₺</span></div>
+<div class="item"><div><h3>Latte</h3></div><span class="price">80 ₺</span></div>
+<div class="item"><div><h3>Cappuccino</h3></div><span class="price">80 ₺</span></div>
+<div class="item"><div><h3>Soğuk Kahve</h3></div><span class="price">90 ₺</span></div>
+<div class="item"><div><h3>Limonata</h3></div><span class="price">70 ₺</span></div>
+</div></section>
+</main>
+
+<footer><strong>KAFEMM</strong><br><br>İyi Yemek • İyi Kahve • İyi Vakit<br><br>© 2026 KAFEMM Cafe & Restaurant</footer>
+</body>
+</html>
